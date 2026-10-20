@@ -165,7 +165,7 @@ static void at_uart_init(void)
 
     // install uart driver
     uart_driver_install(g_at_cmd_port, 1024 * 16, 1024 * 16, 100, &s_at_uart_queue, 0);
-
+    
     // set uart configuration
     uart_config_t config;
     at_uart_config_init(&config);
